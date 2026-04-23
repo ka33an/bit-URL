@@ -22,7 +22,8 @@ mongoose.connect(process.env.MONGO_URI)
 .catch((error)=>{
     console.log("error occurred",error)
 })
+const PORT = process.env.PORT
 
-app.listen(8000, ()=>{
-   console.log ("server is running on port 8000 ")
+app.listen(PORT, ()=>{
+   console.log(`server is running on port ${PORT}`)
 })
