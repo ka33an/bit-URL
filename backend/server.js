@@ -6,9 +6,9 @@ const cors = require('cors');
 const urlRoutes = require("./routes/routes.js")
 
 app.use(cors({
-    origin:process.env.FRONTEND_URL,
-   
+    origin: "*"
 }))
+
 app.use(express.json())
 
 
